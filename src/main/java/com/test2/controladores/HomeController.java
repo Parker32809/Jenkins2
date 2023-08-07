@@ -40,6 +40,7 @@ public class HomeController {
     public String paginaInicio(@PathVariable Optional<String> nombre, HttpServletRequest request, Model modelo) {
         // Depuración
         logger.info("Solicitud GET: {}", request.getRequestURI());
+        System.out.println("yo");
 
         // Verificar si el parámetro ingresado por url está presente
         if (nombre.isPresent()) {
